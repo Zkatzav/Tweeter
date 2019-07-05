@@ -57,7 +57,7 @@ const Tweeter = function() {
     }
   }
   
-  
+
   // An addComment function that receives a postID and text. It should push an object to the relevant post's comments array
     // The object should have two properties: text and id - this is the comment's ID
     // You should generate the next id correctly for each comment:"c7", "c8", ...
@@ -94,23 +94,23 @@ const Tweeter = function() {
   }
 
    
-const tweeter = Tweeter()
+// const tweeterlogic = Tweeter()
 
-tweeter.addPost("This is my own post!")
+// tweeterlogic.addPost("This is my own post!")
 
 // console.log(tweeter.getPosts())
-// // //This should be added to the posts array:
-// // //{text: "This is my own post!", id: "p3", comments: []}
+//This should be added to the posts array:
+//{text: "This is my own post!", id: "p3", comments: []}
 
 // tweeter.removePost("p1")
-// console.log(tweeter.getPosts())
+// console.log(tweeterlogic.getPosts())
 
-// //There should only be two posts in the post's array:
-// //{text: "Aw man, I wanted to be first", id: "p2", comments: Array(3)}
-// //{text: "This is my own post!", id: "p3", comments: []}
+//There should only be two posts in the post's array:
+//{text: "Aw man, I wanted to be first", id: "p2", comments: Array(3)}
+//{text: "This is my own post!", id: "p3", comments: []}
   
-tweeter.addComment("Damn straight it is!", "p3")
-tweeter.addComment("Second the best!", "p2")
+// tweeterlogic.addComment("Damn straight it is!", "p3")
+// tweeterlogic.addComment("Second the best!", "p2")
 // console.log(tweeter.getPosts())
 //This should be added to the third post's comments array:
 //{id: "c7", text: "Damn straight it is!"}
@@ -118,8 +118,7 @@ tweeter.addComment("Second the best!", "p2")
 //This should be added to the second post's comments array:
 //{id: "c8", text: "Second the best!"}
 
-tweeter.removeComment("p2", "c6")
-console.log(tweeter.getPosts())
+// tweeterlogic.removeComment("p2", "c6")
+// console.log(tweeterlogic.getPosts())
 //This comment should be removed:
 //{id: "c6", text: "Haha second place what a joke."
-
